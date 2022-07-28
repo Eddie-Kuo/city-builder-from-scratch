@@ -51,3 +51,9 @@ footer {
     background-size: cover;
     border-radius: 10px;
 }
+
+.report {
+    text-align: center;
+    width: 300px;
+    
+}
