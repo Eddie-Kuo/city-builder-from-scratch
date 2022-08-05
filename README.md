@@ -24,3 +24,29 @@ Additional considerations:
   - What needs to live in a persistence layer?
 - Is there some state we need to initialize?
 - Ask: should any of this work be abstracted into functions? (i.e., is the work complicated? can it be resused?)
+
+<!-- html elements that are needed -->
+<!-- 3 divs to display the images from the choice of the user
+- why? so the user can see what they picked. how? const selection = dropdown.value
+3 dropdowns. 
+- why? so the user can select the choice they want to display. how? <select><option> dropdown.addeventlistener('change', () => {}) 
+space for user to input the slogan they want 
+- why? so the user can input the slogan of their choice. how? slogan.getelementbyid() -> slogan.textcontent = sloganinput.value
+a button to submit the slogan 
+why? so the user can submit the entry that they want. how? sloganbutton.addeventlistener('click', () => {} )
+p tag to display how many times each feature was changed 
+- why? so the user can see how many times each category was changed. how? `string ${value} ...` with the values++; upon selects in the eventlistener
+area to display the slogans that the user inputted
+- why? so the user can see all the slogans they wrote. how? variable = .value to display the contents of the user
+
+Evenets: 
+- when the user selects an item from the dropdown, the picture corresponging to the selection should change
+    - when an item is selected from the dropdown, the display of how many times something was changed should update 
+- when the user clicks the slogan submit button, the list of slogans entered should all be displayed with the new slogan added in 
+    - the list of slogans should clear and reappear with the new one added in 
+
+Vertical slices: 
+- drop down selections should be able to change the picture corresponding to the dropdown selection 
+- user should be able to see how many times each feature was changed from the dropdown selection
+- user should be able to add new slogans into the list of slogans 
+- Stretch goals: add in an option to type in the city name and it should update in real time in according to what's being typed -->

@@ -7,7 +7,7 @@
 body {
     height: 100vh;
     font-family: 'Rubik', san-serif;
-    background: var(--background);
+    background-color: lightslategray;
     display: grid;
     grid-template-rows: auto 1fr auto;
 }
@@ -17,11 +17,14 @@ header {
     top: 0;
     display: flex;
     align-items: center;
-    background-color: var(--header-background);
+    background-color: lightslategray;
 }
 
 main {
     padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer {
@@ -31,5 +34,26 @@ footer {
     font-size: .8em;
     display: flex;
     justify-content: flex-end;
-    background-color: var(--footer-background);
+    background-color: lightslategray;
+}
+
+.left {
+    display: grid;
+    height: 600px;
+    width: 400px;
+    margin: 15px;
+}
+
+.picture {
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.report {
+    text-align: center;
+    width: 300px;
+    
 }
